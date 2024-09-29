@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css"> 
+     <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+    
+    <body>
+    <div class="first d-flex d-column justify-content-center alighn-items-center">
+      <h1 class="text-center">Bookmarker
+        <div class="layer mx-auto"></div>   
+    </h1>
+    </div>
+      <div class="dashed m-auto mt-5 mb-5">
+      </div>
+      <div class="address d-flex  justify-content-center ">
+        <h2 class="text-center">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark yo<span>ur favorite sites
+              <i class="fa-solid fa-bookmark"></i></span></h2>
+      </div>
+      <form>
+      <div class="inputs w-75 m-auto mt-5">
+        <i class="fa-solid fa-book-bookmark sitename"></i>
+      <h6 class="sitename">site name</h6>
+        <div class="form-floating mb-3">
+          <input oninput="validationsyntax(this)" type="text" class="form-control mt-2" id="Bookmarkname" placeholder="Bookmark name" in-valid>
+          <label for="Bookmarkname">Bookmark name</label>
+        </div>
+        <i class="fa-solid fa-link sitenURL"></i>
+        <h6 class="sitenURL ">site URL</h6>
+        <div class="form-floating mt-2">
+          <input oninput="validationsyntax(this)" type="email" class="form-control " id="websiteURL" placeholder="Website URL" in-valid>
+          <label for="websiteURL">Website URL</label>
+        </div>
+    </div>
+    <div class="button m-auto">
+    <button  class="btn btn-danger mt-4 ">Submit</button>
+  </div>
+</form>
+  <div class="dashed m-auto mt-5 mb-5">
+  </div>
+  <div class="row m-auto p-2">
+    <div class="col-md-4">
+      <h6>Index</h6>
+    </div>
+    <div class="col-md-4">
+      <h6>Website Name</h6>
+    </div>
+    <div class="col-md-2">
+      <h6>Visit</h6>
+    </div>
+    <div class="col-md-2">
+      <h6>Delete</h6>
+    </div>
+    </div>
+    
+    <div class="alert alert-warning alert-dismissible fade show w-50 m-auto bg-light collection" role="alert" id="box">
+        <div class="circles mb-2">
+        <div class="red"></div>
+        <div class="yello"></div>
+        <div class="green"></div>
+        <div class="clear"></div>
+      </div>
+  
+      <h4>Site Name or Url is not valid, Please follow the rules below :</h4>
+      <i class="fa-regular fa-circle-right" style="color: #FFD43B;"></i>
+      <span>Site name must contain at least 3 characters</span>
+      <br>
+      <i class="fa-regular fa-circle-right" style="color: #FFD43B;"></i>
+      <span>Site URL must be a valid one</span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+<script src="start.js"></script>
+    </body>
+</html>

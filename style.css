@@ -1,0 +1,92 @@
+body{
+background-color: bisque;
+position: relative;
+}
+.first{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+.layer{
+    height: 20px;
+    width: 250px;
+    background-color: rgb(231, 187, 104);
+    z-index: -10000;
+    margin-top: -25px;
+}
+h1:hover .layer{  
+   height: 40px;
+   margin-top: -40px;
+   transition-delay: 0.1s;
+   transition-duration: .4s;
+   
+}
+
+.dashed{
+    width: 1100px;
+border-bottom:dotted ;
+}
+ 
+h2{
+    color:#419F5A ;
+}
+h2 span{
+    color:#8cb366 ;
+}
+span i{
+    color:#B3AB3D ;
+}
+.sitename{
+    display: inline;
+}
+.sitenURL{
+    display: inline;
+}
+.button{
+    width: 150px;
+}
+.button button{
+    width: 150px;
+    font-size: 18px;
+}
+ .row{
+    width: 1100;
+    background-color: azure;
+}
+.clear{
+    clear: both;
+}
+
+.red{
+float: left;
+    width:20px ;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 7px;
+}
+.yello{
+float: left;
+    width:20px ;
+    height: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    margin-left: 7px;
+}
+
+.green{
+float: left;
+    width:20px ;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 7px;
+
+}
+.collection{
+  z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
